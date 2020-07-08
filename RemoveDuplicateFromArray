@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function calculateArrayCount(){
+            var arr = [1,1,2,2,3];
+            var oArr=[];
+            console.log(arr.length);
+
+            for(i=0; i < arr.length; i++){
+                if(arr[i] == arr[i+1])
+                {
+                    arr.splice(i+1,1);
+                    console.log('First Number ' + i +' Second Number' + (i+1));
+                    console.log(arr);
+                }
+            }
+        }
+
+        calculateArrayCount();
+    </script>
+</head>
+</html>
